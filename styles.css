@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #3498db;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --card-background: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+main {
+    padding: 40px 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 0;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    color: #666;
+}
+
+.founders {
+    background-color: var(--card-background);
+    padding: 60px 0;
+    margin-top: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.founder-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.founder-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.linkedin-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin-button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: var(--card-background);
+    padding: 20px 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    font-size: 14px;
+    color: #666;
+}
+
+footer nav a {
+    color: #666;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .founder-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer nav {
+        margin-top: 20px;
+    }
+
+    footer nav a {
+        margin: 0 10px;
+    }
+}
